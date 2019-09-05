@@ -87,7 +87,7 @@ pub struct Product {
     ///
     /// Only applicable to products of `type=good`.
     #[serde(default)]
-    pub shippable: bool,
+    pub shippable: Option<bool>,
 
     /// Extra information about a product which will appear on your customer's credit card statement.
     ///
